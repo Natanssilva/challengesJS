@@ -43,9 +43,9 @@ HiName('natan');
         let porcentagem = (nominador, denominator) =>{
         let result = nominador / denominator;
         console.log(`O ${nominador} equivale ${result * 100}% do ${denominator} `)
-}
+        }
 
-        porcentagem(100,100);
+            porcentagem(100,100);
 ----------------------------------
 
 /* Uma função que recebe objeto com atributos nome, sobrenomes, e idade e que ela delete algum deles que estejam vazio no caso *null* */
