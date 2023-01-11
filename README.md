@@ -18,11 +18,9 @@ HiName('natan');
             resultado terá de ser 2
     */
 
-
-const letterAttack = (letter, string) =>{
+    const letterAttack = (letter, string) =>{
     console.log(letter.includes('a'))
     console.log(string)
-
     let cont = 0 
     for (let i = 0; i < string.length; i++) {
         let result = string[i];
@@ -34,7 +32,7 @@ const letterAttack = (letter, string) =>{
     console.log(`A quantidade de vezes que a letra ${letter} aparece no nome ${string} é ${cont}`)
 }
 
-letterAttack('b', 'bernardo') 
+    letterAttack('b', 'bernardo') 
 --------------------------------
 
 /* 
@@ -42,28 +40,28 @@ letterAttack('b', 'bernardo')
     ex: funcaoDIVISAO (100,50) a e b
 */ 
 
-let porcentagem = (nominador, denominator) =>{
+        let porcentagem = (nominador, denominator) =>{
         let result = nominador / denominator;
         console.log(`O ${nominador} equivale ${result * 100}% do ${denominator} `)
 }
 
-porcentagem(100,100);
+        porcentagem(100,100);
 ----------------------------------
 
 /* Uma função que recebe objeto com atributos nome, sobrenomes, e idade e que ela delete algum deles que estejam vazio no caso *null* */
 
-const cleanningObject = (object) =>{
-    if (object.surname === null || object.surname === ' ' ) { /* se for null(vazio ou strings vazia deleta) */
+        const cleanningObject = (object) =>{
+         if (object.surname === null || object.surname === ' ' ) { /* se for null(vazio ou strings vazia deleta) */
         delete object.surname;
-    }else if(object.name === null || object.name === ' '){
+        }else if(object.name === null || object.name === ' '){
         delete object.name
-    }else if(object.age === null || object.age === ' '){
+        }else if(object.age === null || object.age === ' '){
         delete object.age 
-    }else{
+        }else{
         console.log('Nenhum objeto a deletar ou seja, nada vazio')
-    }
-    console.log(object)
-} 
+         }
+        console.log(object)
+        } 
 
-cleanningObject({name: " neitans", surname:"silva", age:19});
+        cleanningObject({name: " neitans", surname:"silva", age:19});
 ----------------------------------
